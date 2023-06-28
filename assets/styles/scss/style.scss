@@ -1,1 +1,5 @@
 @import "colors";
+
+select::after {
+  background: #000;
+}
