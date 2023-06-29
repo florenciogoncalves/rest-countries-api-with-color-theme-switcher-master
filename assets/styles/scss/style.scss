@@ -1,5 +1,12 @@
 @import "colors";
+@import "fonts";
 
-select::after {
-  background: #000;
+html, body {
+	height: 100%;
+}
+body {
+  background-color: var(--background);
+  .navbar {
+	background: var(--background);
+}
 }

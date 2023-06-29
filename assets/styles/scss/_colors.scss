@@ -5,15 +5,21 @@ $Very-Dark-Blue-Text: hsl(200, 15%, 8%);
 $Dark-Gray: hsl(0, 0%, 52%);
 $Very-Light-Gray: hsl(0, 0%, 98%);
 $White: hsl(0, 0%, 100%);
-
 // Light mode variables
 $color-elements: $White;
 $color-text: $Very-Dark-Blue-Text;
 $color-background: $Very-Light-Gray;
 $color-input: $Dark-Gray;
+// Global
+:root {
+	--elements: hsl(0, 0%, 100%);
+	--text: hsl(200, 15%, 8%);
+	--background: hsl(0, 0%, 98%);
+	--input: hsl(0, 0%, 52%);
+}
 // Dark mode variables
 .dark-mode {
-	$color-elements: $Dark-Blue;
-  $color-text: $White;
-	$color-background: $Very-Dark-Blue;
+	--elements: hsl(209, 23%, 22%);
+	--text: hsl(0, 0%, 100%);
+	--background: hsl(207, 26%, 17%);
 }

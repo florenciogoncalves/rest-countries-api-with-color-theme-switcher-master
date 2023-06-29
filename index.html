@@ -13,10 +13,10 @@
 	</head>
 	<body>
 		<header class="navbar">
-			<nav>
+			<nav class="container justify-content-between w-100">
 				<div class="brand">Where in the world?</div>
 				<div class="dark-mode-container">
-					<button class="dark-mode">Dark Mode</button>
+					<button class="dark-mode-toggle">Dark Mode</button>
 				</div>
 			</nav>
 		</header>
@@ -30,11 +30,7 @@
 				</div>
 				<div class="form-group">
 					<div class="dropdown">
-						<button
-							class="btn btn-secondary dropdown-toggle"
-							type="button"
-							data-bs-toggle="dropdown"
-							aria-expanded="false">
+						<button class="btn btn-secondary" type="button">
 							Dropdown button
 						</button>
 						<ul class="dropdown-menu">
@@ -46,8 +42,8 @@
 				</div>
 			</form>
 
-			<div class="content">
-				<a href="" class="card" style="width: 18rem">
+			<div class="content container">
+				<a href="" class="card">
 					<img src="" class="card-img-top" alt="..." />
 					<div class="card-body">
 						<h5 class="card-title">Card title</h5>
@@ -60,5 +56,6 @@
 			</div>
 		</main>
 		<script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+		<script src="./assets/scripts/script.js"></script>
 	</body>
 </html>

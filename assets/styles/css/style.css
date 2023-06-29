@@ -1,5 +1,35 @@
-select::after {
-  background: #000;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+:root {
+  --elements: hsl(0, 0%, 100%);
+  --text: hsl(200, 15%, 8%);
+  --background: hsl(0, 0%, 98%);
+  --input: hsl(0, 0%, 52%);
+}
+
+.dark-mode {
+  --elements: hsl(209, 23%, 22%);
+  --text: hsl(0, 0%, 100%);
+  --background: hsl(207, 26%, 17%);
+}
+
+body * {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--text);
+}
+
+/*
+Homepage Items: 14px
+Detail Page: 16px
+*/
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background);
+}
+body .navbar {
+  background: var(--background);
 }
 
 /*# sourceMappingURL=style.css.map */
