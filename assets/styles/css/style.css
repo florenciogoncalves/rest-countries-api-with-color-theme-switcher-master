@@ -15,21 +15,41 @@
 body * {
   font-family: "Nunito Sans", sans-serif;
   color: var(--text);
+  transition: color 300ms;
 }
 
 /*
 Homepage Items: 14px
 Detail Page: 16px
 */
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   background-color: var(--background);
+  transition: background 300ms;
 }
-body .navbar {
-  background: var(--background);
+
+.navbar {
+  background: var(--elements);
+}
+.navbar .brand {
+  font-weight: 800;
+}
+.navbar .toggle-container {
+  gap: 0.35rem;
+}
+.navbar .toggle-container .moon {
+  height: 0.9rem;
+}
+.navbar .toggle-container .dark-mode-toggle {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

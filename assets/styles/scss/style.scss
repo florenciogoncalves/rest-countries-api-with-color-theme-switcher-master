@@ -1,12 +1,33 @@
 @import "colors";
 @import "fonts";
 
-html, body {
+// Variables
+$transition-time: 300ms;
+
+html,
+body {
 	height: 100%;
 }
 body {
-  background-color: var(--background);
-  .navbar {
-	background: var(--background);
+	background-color: var(--background);
+	transition: background $transition-time;
 }
+.navbar {
+	background: var(--elements);
+	.brand {
+		font-weight: 800;
+	}
+	.toggle-container {
+    gap: .35rem;
+    .moon {
+      height: .9rem;
+    }
+		.dark-mode-toggle {
+			padding: 0;
+			border: none;
+			background-color: transparent;
+			font-size: 0.9rem;
+      font-weight: 600;
+		}
+	}
 }
