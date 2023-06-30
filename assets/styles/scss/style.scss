@@ -54,28 +54,40 @@ body {
 		}
 		.dropdown {
 			.dropdown-toggle {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        border: none;
-        font-size: .9rem;
-        font-weight: 300;
-        color: var(--text);
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				border: none;
+				font-size: 0.9rem;
+				font-weight: 300;
+				color: var(--text);
 				background-color: var(--elements);
-        &::after {
-          display: none !important;
-          background: none !important;
-        }
+				&::after {
+					display: none !important;
+					background: none !important;
+				}
 			}
-      .dropdown-menu {
-        border: none;
-      }
+			.dropdown-menu {
+				border: none;
+				font-size: 0.9rem;
+				* {
+					color: var(--text);
+				}
+				background: var(--elements);
+			}
 		}
 	}
+  .content {
+    .card {
+      border: none;
+      text-decoration: none;
+      background: var(--elements);
+    }
+  }
 }
 
 // ----------------------------------------------------------------
 .shadow {
-	box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.09) !important;
+	box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.08) !important;
 }

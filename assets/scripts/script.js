@@ -1,24 +1,29 @@
-const body = document.querySelector('body');
+// Imports
+import { ContriesAPI } from './contries_api.js'
+// Global variables
+const BODY = document.querySelector('body');
 // Dark mode toggle
-const toggle = document.querySelector(".dark-mode-toggle");
-const moon = document.querySelector('.moon')
-toggle.addEventListener("click", () => {
-	if (body.classList.contains("dark-mode")) {
+const TOGGLE = document.querySelector(".dark-mode-toggle");
+const MOON = document.querySelector('.moon')
+TOGGLE.addEventListener("click", () => {
+	if (BODY.classList.contains("dark-mode")) {
 		document.querySelector("body").classList.toggle("dark-mode");
-		moon.setAttribute("name", "moon-outline");
+		MOON.setAttribute("name", "moon-outline");
 	} else {
 		document.querySelector("body").classList.toggle("dark-mode");
-		moon.setAttribute("name", "moon");
+		MOON.setAttribute("name", "moon");
 	}
 });
-// Search for a country
+// Search input
 const searchField = document.querySelector(".search-field");
 const searchInput = document.querySelector('.search-input');
-searchField.addEventListener('input', SearchFunc)
-function SearchFunc() {
+searchField.addEventListener('input', searchFunc)
+function searchFunc() {
   if(searchInput.value.length < 1) {
     searchField.classList.add('empty');
   } else {
     searchField.classList.remove('empty');
   }
 }
+// API
+ContriesAPI.SetAllContries()

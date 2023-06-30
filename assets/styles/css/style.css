@@ -86,10 +86,20 @@ body {
 }
 .main .form .dropdown .dropdown-menu {
   border: none;
+  font-size: 0.9rem;
+  background: var(--elements);
+}
+.main .form .dropdown .dropdown-menu * {
+  color: var(--text);
+}
+.main .content .card {
+  border: none;
+  text-decoration: none;
+  background: var(--elements);
 }
 
 .shadow {
-  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.09) !important;
+  box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.08) !important;
 }
 
 /*# sourceMappingURL=style.css.map */
