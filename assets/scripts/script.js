@@ -8,9 +8,11 @@ const MOON = document.querySelector('.moon')
 TOGGLE.addEventListener("click", () => {
 	if (BODY.classList.contains("dark-mode")) {
 		document.querySelector("body").classList.toggle("dark-mode");
+    TOGGLE.textContent = 'Dark Mode'
 		MOON.setAttribute("name", "moon-outline");
 	} else {
 		document.querySelector("body").classList.toggle("dark-mode");
+    TOGGLE.textContent = 'Light Mode'
 		MOON.setAttribute("name", "moon");
 	}
 });

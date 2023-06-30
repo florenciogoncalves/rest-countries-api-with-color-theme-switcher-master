@@ -92,6 +92,9 @@ body {
 .main .form .dropdown .dropdown-menu * {
   color: var(--text);
 }
+.main .content {
+  height: 100%;
+}
 .main .content .card {
   border: none;
   text-decoration: none;
