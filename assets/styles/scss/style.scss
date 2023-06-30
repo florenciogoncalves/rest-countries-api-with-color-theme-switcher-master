@@ -18,16 +18,64 @@ body {
 		font-weight: 800;
 	}
 	.toggle-container {
-    gap: .35rem;
-    .moon {
-      height: .9rem;
-    }
+		gap: 0.35rem;
+		.moon {
+			height: 0.9rem;
+		}
 		.dark-mode-toggle {
 			padding: 0;
 			border: none;
 			background-color: transparent;
 			font-size: 0.9rem;
-      font-weight: 600;
+			font-weight: 600;
 		}
 	}
+}
+.main {
+	.form {
+		.search-field {
+			display: flex;
+			align-items: center;
+			background-color: var(--elements);
+			.icone {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+			.search-input {
+				border: none;
+				outline: none;
+				background: none;
+			}
+			&.empty {
+				* {
+					color: var(--input);
+				}
+			}
+		}
+		.dropdown {
+			.dropdown-toggle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        font-size: .9rem;
+        font-weight: 300;
+        color: var(--text);
+				background-color: var(--elements);
+        &::after {
+          display: none !important;
+          background: none !important;
+        }
+			}
+      .dropdown-menu {
+        border: none;
+      }
+		}
+	}
+}
+
+// ----------------------------------------------------------------
+.shadow {
+	box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.09) !important;
 }

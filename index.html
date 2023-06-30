@@ -18,7 +18,7 @@
 			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	</head>
 	<body>
-		<nav class="navbar py-4 px-1 shadow-sm">
+		<nav class="navbar py-4 px-1 shadow">
 			<div class="container justify-content-between">
 				<div class="brand">Where in the world?</div>
 				<div class="toggle-container d-flex align-items-center">
@@ -27,33 +27,37 @@
 				</div>
 			</div>
 		</nav>
-		<main class="main container py-4">
-			<form action="" class="form">
-				<div class="form-group">
+		<main class="main container py-4 gap-4 d-flex flex-column">
+			<form action="" class="form d-flex flex-column gap-4">
+				<fieldset class="search-field empty form-group col-12 shadow p-3 rounded ">
+					<ion-icon name="search-sharp" class="icone ps-3 pe-4"></ion-icon>
 					<input
 						type="text"
-						class="form-control"
+						class="search-input w-100"
 						placeholder="Search for a country..." />
-				</div>
-				<div class="form-group">
-					<div class="dropdown">
+				</fieldset>
+				<div class="form-group col-7 col-sm-6 d-flex">
+					<div class="dropdown w-100">
 						<button
-							class="btn btn-secondary dropdown-toggle"
+							class="btn btn-secondary dropdown-toggle w-100 text-start shadow p-3"
 							type="button"
 							data-bs-toggle="dropdown"
 							aria-expanded="false">
-							Dropdown button
+							Filter by Region
+							<ion-icon name="chevron-down-sharp"></ion-icon>
 						</button>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<ul class="dropdown-menu shadow col-12 mt-1">
+							<li><a class="dropdown-item" href="#">Africa</a></li>
+							<li><a class="dropdown-item" href="#">America</a></li>
+							<li><a class="dropdown-item" href="#">Asia</a></li>
+							<li><a class="dropdown-item" href="#">Europe</a></li>
+							<li><a class="dropdown-item" href="#">Oceania</a></li>
 						</ul>
 					</div>
 				</div>
 			</form>
 
-			<div class="content container">
+			<div class="content">
 				<a href="" class="card">
 					<img src="" class="card-img-top" alt="..." />
 					<div class="card-body">

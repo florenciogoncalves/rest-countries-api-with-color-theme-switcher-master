@@ -52,4 +52,44 @@ body {
   font-weight: 600;
 }
 
+.main .form .search-field {
+  display: flex;
+  align-items: center;
+  background-color: var(--elements);
+}
+.main .form .search-field .icone {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.main .form .search-field .search-input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.main .form .search-field.empty * {
+  color: var(--input);
+}
+.main .form .dropdown .dropdown-toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text);
+  background-color: var(--elements);
+}
+.main .form .dropdown .dropdown-toggle::after {
+  display: none !important;
+  background: none !important;
+}
+.main .form .dropdown .dropdown-menu {
+  border: none;
+}
+
+.shadow {
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.09) !important;
+}
+
 /*# sourceMappingURL=style.css.map */
